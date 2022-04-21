@@ -1,0 +1,68 @@
+/* reset pagina */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* fine reset pagina */
+
+/* definisco il container di tutto */
+.containerApp{
+    width: 100%;
+    height: 100vh;
+    background-color: #4d4d4d;
+    overflow: auto;
+}
+/* fine impostazione container app */
+
+/* header */
+
+header{
+    width: 100%;
+    height: 70px;
+    border-bottom: 1px solid grey;
+    
+}
+.titlePage{
+    width: 200px;
+    height: 50px;
+    background-color: rgb(244, 111, 111);
+    margin: 10px;
+    float: left;
+}
+.titlePage h2{
+    line-height: 50px;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 5px;
+    font-size: 80%;
+    color: #4d4d4d;
+
+}
+h1{
+    margin-left: 35%;
+    line-height: 70px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 10px;
+    font-size: 1.6em;
+    color: lightyellow;
+}
+
+/* fine header */
+/* inizio main */
+main{
+    width: 100%;
+    height: calc((100% - 140px));
+    border-bottom: 1px solid grey;
+}
+/* fine main */
+
+/* inizio footer */
+
+footer{
+    width: 100%;
+    height: 70px;
+    
+}
+
+/* fine footer */
