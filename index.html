@@ -25,13 +25,34 @@
         <!-- fine header -->
          <!-- inizio main -->
         <main>
-
+            <div class="leftSection">
+                <div class="titleImage">
+                    <h2 :class="(counter==index)?'visibile':'invisibile'" v-for="(element, index) in infoPhoto">{{element.titolo}}</h2>
+                    
+                </div>
+                <div class="descriptionImage">
+                    <p :class="(counter==index)?'visibile':'invisibile'" v-for="(element, index) in infoPhoto">{{element.descrizione}}</p>
+                </div>
+            </div>
+            <div class="rightSection">
+                <div class="slider">
+                       <img :src="photos[counter]" :alt="alt[counter]">
+                    <div class="navBar">
+                        <i @click="circleClick(index)" v-for="(pallino, index) in photos" :class="(counter === index)?'active':'notActive'" class="fa-solid fa-minus"></i>
+                    </div>
+                </div>
+            </div>
         </main>
         <!-- fine main -->
 
         <!-- inizio footer -->
         <footer>
-
+           <div class="left">
+            <i @click="precedente" class="fa-solid fa-chevron-left"></i>
+           </div>
+           <div class="right">
+            <i @click="next" class="fa-solid fa-chevron-right"></i>
+           </div>
         </footer>
         <!-- fine footer -->
     </div>

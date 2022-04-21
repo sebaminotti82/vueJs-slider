@@ -54,7 +54,96 @@ main{
     width: 100%;
     height: calc((100% - 140px));
     border-bottom: 1px solid grey;
+    display: flex;
+    flex-direction: row;
 }
+/* parte sinistra del main */
+.leftSection{
+    width: 30%;
+    height: 100%;
+    border-right: 1px solid grey;
+    
+}
+.titleImage{
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid gray;
+}
+.titleImage h2{
+    text-align: center;
+    line-height: 50px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 5px;
+    font-size: 1.1em;
+    color: lightcoral;
+}
+.descriptionImage{
+    width: 100%;
+    height: calc(100% - 50px);
+    padding: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: oblique;
+    font-size: 1.4em;
+
+    
+}
+.descriptionImage p{
+    margin-top: 20%;
+    color: aliceblue;
+}
+.visibile{
+    display: block;
+}
+.invisibile{
+    display: none;
+}
+
+/* fine parte sinistra del main */
+
+
+/* parte destra main */
+ .rightSection{
+     width: 70%;
+     height: 100%;
+     
+ }
+ .slider{
+     position: relative;
+     width: 100%;
+     height: 100%;
+    text-align: center;
+ }
+ .slider img{
+     width: 90%;
+     height: 80%;
+     margin-top: 5%;
+     border-radius: 10px;
+ }
+ .navBar{
+     position: absolute;
+     width: 100%;
+     height: 40px;
+     bottom: 0;
+     border-top: 1px solid grey;
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+
+ }
+ .navBar i {
+     
+     line-height: 40px;
+     font-size: 3em;
+     padding: 0 10px;
+ }
+.active{
+    color: lightgreen;
+}
+.notActive{
+    color: aliceblue;
+}
+/* fine parte destra del main */
+
 /* fine main */
 
 /* inizio footer */
@@ -62,7 +151,32 @@ main{
 footer{
     width: 100%;
     height: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
     
+}
+.left, .right{
+    width:50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    border: 1px solid grey;
+    margin-top: 10px;
+    margin-left: 430px;
+}
+.left:hover, .right:hover{
+    background-color: lightsalmon;
+}
+.left i, .right i{
+    line-height: 50px;
+    font-size: 2em;
+    color: white;
+}
+.left i:hover, .right i:hover{
+    color: lightgreen;
+    cursor: pointer;
 }
 
 /* fine footer */
